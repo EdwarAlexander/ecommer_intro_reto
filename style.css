@@ -11,6 +11,15 @@ a{
     color: #000;
 }
 
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
 
 /** header y navegacion **/
 .nombre-sitio{
@@ -23,11 +32,30 @@ a{
     color: #037bc0;
 }
 
-.nav-principal{
+.contenedor-navegacion {
     border-color: #e1e1e1;
     border-top-style: solid;
     border-width: 1px;
+}
+.nav-principal{
+    
     /*padding-top: 20px;
     padding-bottom: 20px;*/
     padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    background-image: url("../img/principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+/* categorias */
+.listado-categoria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
